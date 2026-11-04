@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>مبادرة وعي مطمئن</title>
+<style>
+:root{--navy:#173b5e;--teal:#168b87;--mint:#e8f6f2;--gold:#e7b85c;--ink:#203447;--muted:#647789;--paper:#fbfdfc;--line:#dce9e7}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.8}
+a{color:inherit}.hero{background:linear-gradient(135deg,#123653,#176d77);color:white;padding:26px 6vw 58px;position:relative;overflow:hidden}
+.top{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.brand{font-weight:bold;letter-spacing:.2px}.badge{border:1px solid #ffffff66;border-radius:999px;padding:5px 14px;font-size:.88rem}
+.hero-content{max-width:850px;margin:54px auto 0;text-align:center}.hero-art{display:block;width:min(100%,520px);height:auto;margin:0 auto 26px;border-radius:22px;box-shadow:0 14px 36px #071c2b40}.eyebrow{color:#f5d58e;font-weight:bold}.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.2;margin:12px 0}.hero p{font-size:1.15rem;max-width:700px;margin:18px auto;color:#e5f4f5}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;text-decoration:none;border-radius:12px;padding:11px 22px;font-weight:bold;background:#f5d58e;color:#173b5e;border:0;cursor:pointer}.btn.secondary{background:transparent;color:white;border:1px solid #ffffff99}
+main{max-width:1100px;margin:-26px auto 0;padding:0 20px;position:relative}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat,.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 24px #173b5e0a}.stat{text-align:center}.stat strong{display:block;color:var(--teal);font-size:1.5rem}.section{padding:58px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 28px}.section-head h2{font-size:2rem;color:var(--navy);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card h3{margin:8px 0;color:var(--navy)}.icon{width:46px;height:46px;border-radius:14px;background:var(--mint);display:grid;place-items:center;font-size:1.4rem}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{border-right:3px solid var(--gold);padding:8px 16px}.step b{color:var(--teal);display:block}.banner{background:var(--mint);border-radius:22px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.banner h2{margin:0;color:var(--navy)}.form-wrap{max-width:720px;margin:auto;background:white;border:1px solid var(--line);border-radius:20px;padding:26px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-weight:bold;font-size:.92rem}input,select,textarea{font:inherit;padding:11px 12px;border:1px solid #cbdad9;border-radius:10px;background:#fff;color:var(--ink)}textarea{min-height:100px;resize:vertical}.notice{font-size:.9rem;color:var(--muted);margin-top:12px}#success{display:none;margin-top:14px;padding:12px;background:var(--mint);border-radius:10px;color:#11615d}
+footer{background:#123653;color:#e6f2f4;padding:28px 6vw;text-align:center;margin-top:50px}footer p{margin:4px}.small{font-size:.9rem;color:#d0e3e8}
+@media(max-width:760px){.hero-art{width:100%;border-radius:14px}.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}.hero-content{margin-top:35px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.section{padding:42px 0}}
+</style>
+</head>
+<body>
+<section aria-label="الصفحة الرئيسية للمبادرة" class="welcome">
+<div class="welcome-inner">
+<img alt="ملصق مبادرة وعي يطمئن.. وطن آمن" class="welcome-poster" src="poster.png"/>
+<h1>مبادرة وعي يطمئن .. وطن آمن</h1>
+<p>معًا نحو وعيٍ يحمي أبناءنا ويعزز أمن وطننا</p>
+<div class="audio-box">
+<h2>استمع إلى رسالة المبادرة</h2>
+<audio id="initiativeAudio" controls autoplay playsinline preload="auto" src="FullSizeRender.mp3">متصفحك لا يدعم تشغيل الصوت.</audio>
+</div>
+<a class="welcome-link" href="https://forms.gle/3yD5QAQoPFcjigoM8" target="_blank" rel="noopener">المشاركة في المبادرة</a>
+<a class="welcome-link" href="#initiative-content">انتقل إلى تفاصيل المبادرة ↓</a>
+</div>
+</section>
+<style>
+.welcome{background:#f4f9f5;color:#154d2d;padding:28px 16px 42px;text-align:center;border-bottom:5px solid #d8ad36}
+.welcome-inner{max-width:980px;margin:auto}
+.welcome-poster{display:block;width:min(100%,620px);height:auto;margin:0 auto 22px;border-radius:18px;box-shadow:0 12px 32px #123b2630}
+.welcome h1{font-size:clamp(1.8rem,5vw,3rem);margin:12px 0;color:#07552c}
+.welcome p{font-size:1.1rem;margin:8px 0 20px}
+.audio-box{max-width:620px;margin:20px auto;padding:18px;background:white;border:1px solid #d9e8dc;border-radius:16px}
+.audio-box h2{font-size:1.25rem;margin:0 0 12px;color:#07552c}
+.audio-box audio{width:100%}
+.welcome-link{display:inline-block;margin-top:18px;padding:11px 22px;background:#07552c;color:white;text-decoration:none;border-radius:12px;font-weight:bold}
+@media(max-width:600px){.welcome{padding:18px 10px 28px}.welcome-poster{border-radius:10px}}
+</style>
+<div id="initiative-content"></div>
+<header class="hero">
+<div class="top">
+<div class="brand">الابتدائية الأولى برحيب للبنات</div>
+<div class="badge">مبادرة مدرسية توعوية</div>
+</div>
+<div class="hero-content">
+<div class="eyebrow">وعيٌ يحمي • معرفةٌ تطمئن</div>
+<h1>وعي مطمئن</h1>
+<p>مبادرة تربوية لتعزيز الوعي الفكري والرقمي والسلوكي، وبناء بيئة مدرسية آمنة ومطمئنة، تنمّي لدى الطالبات مهارات التحقق، والحوار، واتخاذ القرار المسؤول.</p>
+<div class="actions">
+<a class="btn" href="#about">اكتشفي المبادرة</a>
+<a class="btn secondary" href="#participate">شاركي معنا</a>
+</div>
+</div>
+</header>
+<main>
+<div aria-label="ملخص المبادرة" class="stats">
+<div class="stat"><strong>وعي</strong><span>فهمٌ وتمييزٌ للمعلومات</span></div>
+<div class="stat"><strong>أمان</strong><span>سلوك مسؤول في المدرسة والفضاء الرقمي</span></div>
+<div class="stat"><strong>طمأنينة</strong><span>حوار إيجابي وانتماء وثقة</span></div>
+</div>
+<section class="section" id="about">
+<div class="section-head"><h2>عن المبادرة</h2><p>نحو طالبة واعية، آمنة، وقادرة على التعامل مع المواقف اليومية بثقة ومسؤولية.</p></div>
+<div class="card">
+<p><b>فكرة المبادرة:</b> تقديم أنشطة توعوية مبسطة ومتنوعة تساعد الطالبات على التثبت من المعلومات، واحترام الاختلاف، وحماية الخصوصية، وطلب المساعدة من مصادر موثوقة عند الحاجة.</p>
+<p><b>الفئة المستهدفة:</b> طالبات المدرسة، مع إشراك الأسرة ومنسوبات المدرسة.</p>
+<p><b>القيمة الأساسية:</b> المعرفة قبل النشر، والاحترام في الحوار، والسلامة في السلوك.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-head"><h2>أهدافنا</h2><p>خطوات صغيرة تصنع أثرًا مستدامًا.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">🔎</div><h3>التحقق من المعلومات</h3><p>تدريب الطالبات على التمييز بين المعلومة الموثوقة والشائعة، والرجوع إلى المصادر المعتمدة.</p></article>
+<article class="card"><div class="icon">🛡️</div><h3>السلامة الرقمية</h3><p>تعزيز حماية البيانات الشخصية، والاستئذان قبل مشاركة الصور، والإبلاغ عن المحتوى المؤذي.</p></article>
+<article class="card"><div class="icon">💬</div><h3>الحوار الإيجابي</h3><p>تنمية مهارات الاستماع، واحترام الرأي الآخر، والتعبير عن المشاعر بأسلوب مناسب.</p></article>
+</div>
+</section>
+<section class="section">
+<div class="section-head"><h2>مسارات المبادرة</h2><p>أربعة مسارات متكاملة للتوعية والتطبيق.</p></div>
+<div class="steps">
+<div class="step"><b>١. وعي فكري</b><span>التثبت من الأخبار واحترام التنوع.</span></div>
+<div class="step"><b>٢. وعي رقمي</b><span>الخصوصية، والأمان، والاستخدام المسؤول.</span></div>
+<div class="step"><b>٣. وعي سلوكي</b><span>التعاون، والاحترام، وطلب المساندة.</span></div>
+<div class="step"><b>٤. وعي أسري</b><span>شراكة الأسرة في ترسيخ الممارسات الآمنة.</span></div>
+</div>
+</section>
+<section class="section">
+<div class="banner">
+<div><h2>أنشطة مقترحة</h2><p>ركن «تحققي قبل أن تشاركي» • بطاقة الموقف الآمن • حوار الصباح • تحدي كلمة طيبة • رسالة توعوية للأسرة.</p></div>
+<a class="btn" href="#participate">إضافة مشاركة</a>
+</div>
+</section>
+<section class="section" id="participate">
+<div class="section-head"><h2>شاركي في المبادرة</h2><p>اكتبي فكرة أو رسالة قصيرة تسهم في نشر الوعي والطمأنينة.</p></div>
+<form class="form-wrap" id="participationForm">
+<div class="form-grid">
+<div class="field"><label for="name">الاسم (اختياري)</label><input id="name" name="name" placeholder="اسم المشاركة"/></div>
+<div class="field"><label for="role">صفة المشاركة</label><select id="role" name="role"><option>طالبة</option><option>وليّة أمر</option><option>معلمة</option><option>منسوبة للمدرسة</option></select></div>
+<div class="field full"><label for="idea">المشاركة أو الرسالة</label><textarea id="idea" name="idea" placeholder="اكتبي رسالتك هنا..." required=""></textarea></div>
+<div class="field full"><button class="btn" type="submit">إرسال المشاركة</button></div>
+</div>
+<p class="notice">هذا نموذج تجريبي داخل الصفحة؛ لا تُرسل البيانات إلى المدرسة أو تُحفظ على خادم. لتفعيل استقبال المشاركات فعليًا، اربطي النموذج بخدمة نماذج معتمدة مثل Google Forms.</p>
+<div id="success" role="status">شكرًا لمشاركتك! تمت تجربة النموذج بنجاح.</div>
+</form>
+</section>
+</main>
+<footer>
+<p><b>مبادرة وعي مطمئن</b> | الابتدائية الأولى برحيب للبنات</p>
+<p>إعداد المعلمة: ليلى مباركي</p>
+<p class="small">معًا نحو بيئة مدرسية واعية وآمنة ومطمئنة</p>
+</footer>
+<script>
+document.getElementById('participationForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ if(!document.getElementById('idea').value.trim()) return;
+ document.getElementById('success').style.display='block';
+ this.reset();
+});
+</script>
+
+<script>
+// يبدأ الصوت عند أول تفاعل من الزائر في أي مكان بالصفحة، دون زر استماع مخصص.
+window.addEventListener('DOMContentLoaded', function () {
+  const audio = document.getElementById('initiativeAudio');
+  if (!audio) return;
+  audio.autoplay = true;
+  const startAudio = function () {
+    audio.play().then(function () {
+      document.removeEventListener('click', startAudio);
+      document.removeEventListener('touchstart', startAudio);
+      document.removeEventListener('keydown', startAudio);
+    }).catch(function () {});
+  };
+  audio.play().catch(function () {});
+  document.addEventListener('click', startAudio);
+  document.addEventListener('touchstart', startAudio, {passive:true});
+  document.addEventListener('keydown', startAudio);
+});
+</script>
+</body>
+</html>
